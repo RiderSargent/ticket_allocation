@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  get '/ticket_options/:id', to: 'ticket_options#show'
+  resources :ticket_options, only: [:show, :create]
 
 end
