@@ -1,0 +1,2 @@
+class TicketOption < ApplicationRecord
+end

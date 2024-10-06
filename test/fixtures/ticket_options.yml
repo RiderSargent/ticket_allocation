@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 3826d6b1-ae7a-4c0f-a0c0-4f1f18bab62b
+  name: test one
+  desc: sample description for one
+  allocation: 100
+
+two:
+  id: a0f00b49-6506-4f07-9e9b-6cdd0e340b06
+  name: test two
+  desc: sample description for two
+  allocation: 50
