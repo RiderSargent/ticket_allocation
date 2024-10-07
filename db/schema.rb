@@ -18,10 +18,9 @@ ActiveRecord::Schema[7.2].define(version: 2024_10_06_153657) do
   create_table "purchases", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.integer "quantity"
     t.uuid "user_id"
-    t.bigint "ticket_option_id"
+    t.uuid "ticket_option_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["ticket_option_id"], name: "index_purchases_on_ticket_option_id"
   end
 
   create_table "ticket_options", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
