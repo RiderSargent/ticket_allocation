@@ -24,7 +24,7 @@ class TicketOptionsControllerTest < ActionDispatch::IntegrationTest
       allocation: 100
     }
 
-    assert_difference('TicketOption.count', 1) do
+    assert_difference("TicketOption.count", 1) do
       post "/ticket_options", params: params
     end
 

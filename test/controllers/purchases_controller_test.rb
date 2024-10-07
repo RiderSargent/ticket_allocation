@@ -2,7 +2,7 @@ require "test_helper"
 
 class PurchasesControllerTest < ActionDispatch::IntegrationTest
   def create_ticket_option
-    TicketOption.create(
+    TicketOption.create!(
       name: "Test ticket option",
       desc: "ticket option description",
       allocation: 100
